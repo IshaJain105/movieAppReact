@@ -5,7 +5,7 @@ const Topnav = () => {
   const [query, setQuery] = useState("");
 
   return (
-    <div className="w-full h-[10vh]  relative flex justify-start items-center ml-[15vw] ">
+    <div className="w-full h-[10vh] relative flex justify-start items-center pl-[15vw] ">
       <i class="text-[#6556CD] text-3xl ri-search-line"></i>
       <input
         type="text"

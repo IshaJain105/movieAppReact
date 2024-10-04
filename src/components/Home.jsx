@@ -2,7 +2,7 @@ import Sidenav from "./partials/Sidenav"
 import Topnav from "./partials/Topnav"
 
 const Home = () => {
-    document.title="React | HomePage"
+    document.title="MovieApp | HomePage"
   return (
     <>
         <Sidenav/>
