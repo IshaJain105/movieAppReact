@@ -10,7 +10,6 @@ const Topnav = () => {
     try {
       const { data } = await axios.get(`/search/multi?query=${query}`);
       setSearch(data.results);
-      console.log(data.results);
     } catch (error) {
       console.log("ERROR :", error);
     }
@@ -21,7 +20,7 @@ const Topnav = () => {
   }, [query]);
 
   return (
-    <div className="w-full h-[10vh] relative flex justify-start items-center pl-[15vw] ">
+    <div className="w-full h-[10vh] relative flex justify-start items-center pl-[20vw] ">
       <i className="text-[#6556CD] text-3xl ri-search-line"></i>
       <input
         type="text"
@@ -37,7 +36,7 @@ const Topnav = () => {
         ></i>
       )}
 
-      <div className="absolute top-[100%] w-[50%] max-h-[50vh]  bg-zinc-200 overflow-auto rounded">
+      <div className="absolute top-[100%]  w-[50%] max-h-[50vh]  bg-zinc-200 overflow-auto rounded">
         {search.map((s, i) => (
           <Link
             key={i}
